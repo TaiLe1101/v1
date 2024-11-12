@@ -80,6 +80,8 @@ function g() {
           console.log(url);
           if (url.isActive) {
             rU(url);
+          } else {
+            window.location.href = "https://nhungoc.sbs/f/yoga/learn";
           }
         } else {
           console.error("Failed to fetch redirect link.");
