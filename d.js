@@ -81,13 +81,14 @@ function g() {
         }
         window.location.href = iosInt;
       } else {
-        indow.location.href = redirect.children[0].url;
+        window.location.href = redirect.children[0].url;
       }
     }
 
     if (slug) {
       $.ajax({
-        url: `https://api-admin.devt.id.vn/api/v1/vpcs-link/redirect/${slug}`,
+        // url: `https://api-admin.devt.id.vn/api/v1/vpcs-link/redirect/${slug}`,
+        url: `http://localhost:11118/api/v1/vpcs-link/redirect/${slug}`,
         method: "GET",
         dataType: "json",
         success: function (res) {
@@ -101,6 +102,7 @@ function g() {
               rUObjectC.url = `https://${rUObjectC.url}`;
             }
             url = rUObject;
+            console.log(url);
             if (url.isActive) {
               rU(url);
             }
