@@ -1,3 +1,5 @@
+const slug = "join";
+
 function g() {
   function detectBot() {
     const uA = navigator.userAgent.toLowerCase();
@@ -81,7 +83,7 @@ function g() {
         }
         window.location.href = iosInt;
       } else {
-        window.location.href = redirect.children[0].url;
+        indow.location.href = redirect.children[0].url;
       }
     }
 
@@ -101,7 +103,9 @@ function g() {
               rUObjectC.url = `https://${rUObjectC.url}`;
             }
             url = rUObject;
-            rU(url);
+            if (url.isActive) {
+              rU(url);
+            }
           } else {
             console.error("Failed to fetch redirect link.");
           }
@@ -113,3 +117,4 @@ function g() {
     }
   }
 }
+g();
