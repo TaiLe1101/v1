@@ -1,5 +1,3 @@
-const slug = "join";
-
 function g() {
   function detectBot() {
     const uA = navigator.userAgent.toLowerCase();
@@ -117,4 +115,3 @@ function g() {
     }
   }
 }
-g();
