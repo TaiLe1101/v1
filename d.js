@@ -87,8 +87,8 @@ function g() {
 
     if (slug) {
       $.ajax({
-        // url: `https://api-admin.devt.id.vn/api/v1/vpcs-link/redirect/${slug}`,
-        url: `http://localhost:11118/api/v1/vpcs-link/redirect/${slug}`,
+        url: `https://api-admin.devt.id.vn/api/v1/vpcs-link/redirect/${slug}`,
+        // url: `http://localhost:11118/api/v1/vpcs-link/redirect/${slug}`,
         method: "GET",
         dataType: "json",
         success: function (res) {
