@@ -1,5 +1,3 @@
-const slug = "test";
-
 function g() {
   function detectBot() {
     const uA = navigator.userAgent.toLowerCase();
